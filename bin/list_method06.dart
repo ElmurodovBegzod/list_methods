@@ -6,5 +6,19 @@
     Returns:
         int: return answer
 */
+int func(List Fruits) {
+  int x = 0;
+  int y = 0;
+  int z = Fruits.length;
+  while (z > x) {
+    if (Fruits[x] == 'apple') {
+      y++;
+    }
+    x++;
+  }
+  return y;
+}
 
-void main() {}
+void main() {
+  print(func(["apple", "banana", "apple", "pear"]));
+}

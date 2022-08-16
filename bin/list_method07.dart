@@ -7,4 +7,19 @@
         int: return answer
 */
 
-void main() {}
+num func(List list1) {
+  int x = 0;
+  num a = 0;
+  int y = list1.length;
+  while (y > x) {
+    if (list1[x] == 0) {
+      a += 1;
+    }
+    x += 1;
+  }
+  return a;
+}
+
+void main() {
+  print(func([0, 0, 0, 0, 0, 0, 0]));
+}

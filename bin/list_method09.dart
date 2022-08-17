@@ -7,15 +7,15 @@
         list: return answer
 */
 
-List func(List x) {
+List func(List fruits) {
   List y = [];
-  int i = 0;
-  int l = x.length;
-  while (l > i) {
-    if ('apple' == x[i]) {
-      y.add(i);
+  int x = 0;
+  int z = fruits.length;
+  while (z > x) {
+    if ('apple' == fruits[x]) {
+      y.add(x);
     }
-    i += 1;
+    x += 1;
   }
   return y;
 }

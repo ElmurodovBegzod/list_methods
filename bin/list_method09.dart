@@ -7,4 +7,19 @@
         list: return answer
 */
 
-void main() {}
+List func(List fruits) {
+  List y = [];
+  int x = 0;
+  int l = fruits.length;
+  while (l > x) {
+    if ('apple' == fruits[x]) {
+      y.add(x);
+    }
+    x += 1;
+  }
+  return y;
+}
+
+void main() {
+  print(func(["apple", "banana", "apple", "pear", "apple"]));
+}

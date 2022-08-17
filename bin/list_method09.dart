@@ -8,18 +8,20 @@
 */
 
 List func(List fruits) {
-  List y = [];
+  List y = [0];
   int x = 0;
   int z = fruits.length;
   while (z > x) {
     if ('apple' == fruits[x]) {
       y.add(x);
+      y[0] += 1;
     }
     x += 1;
   }
+
   return y;
 }
 
 void main() {
-  print(func(['apple', 'orange', 'apple', 'apple', 'kiwi', 'apple']));
+  print(func(["apple", "banana", "apple", "pear", "apple"]));
 }
